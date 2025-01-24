@@ -7,21 +7,28 @@ body {
 
 nav ul {
   display: flex;
-  list-style: none;
+  justify-content: space-around;
   background-color: #14555A;
   padding: 10px;
-  justify-content: space-around;
 }
 
 nav ul li {
-  margin-right: 15px;
+  list-style: none;
 }
 
-.hero {
-  text-align: center;
-  background-color: #495F73;
+button {
+  background-color: #14555A;
   color: white;
-  padding: 50px 20px;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #495F73;
 }
 
 footer {
@@ -31,62 +38,25 @@ footer {
   color: white;
 }
 
-button {
-  background-color: #14555A;
-  color: white;
-  font-size: 16px;
-  padding: 12px 20px;
-  margin: 10px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  display: block;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #495F73;
-}
-
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-
-  nav ul li {
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
-
-  .hero {
-    padding: 30px 10px;
-  }
-
-  footer {
-    font-size: 14px;
   }
 
   button {
-    font-size: 18px;
-    padding: 14px 25px;
+    font-size: 25px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 14px;
-  }
-
-  .hero {
-    padding: 20px 5px;
     font-size: 16px;
   }
 
   button {
-    font-size: 20px;
-    padding: 18px 30px;
+    font-size: 30px;
+    padding: 40px;
   }
 }
