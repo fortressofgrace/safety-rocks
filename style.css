@@ -35,7 +35,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  } <!-- Media query for smaller screens (mobile) -->
+  } 
 
   nav ul li {
     margin-bottom: 10px; 
