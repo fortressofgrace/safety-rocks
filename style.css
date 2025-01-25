@@ -1,17 +1,18 @@
+body{
+	background-color: #B8907B; /*sandy pink*/
+}
+
 h1{
-	color: #B8907B; /*sandy pink*/
+	color: #14555A /*sea green*/
 	font-family: "Brush Script MT", cursive;
-	background-color: #14555A /*sea green*/
 }
 
 p{
 	color: white;
 	font-family: "Georgia", serif;
-	background-color: #14555A 
 }
 
 nav{
 	color: white;
 	font-family: "Tahoma", sans-serif;
-	background-color: #B8907B; /*slate grey*/
 }
