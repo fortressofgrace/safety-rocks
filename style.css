@@ -47,19 +47,3 @@ button:hover {
 	background-color: #B8907B;
 	color: black;
 }
-
-section {
-	padding: 20px;
-	background-color: #9BB9BF;
-	color: #14555A;
-	border-radius: 10px;
-	margin-bottom: 20px;
-}
-
-footer {
-	font-family: "Arial", sans-serif;
-	background-color: #465354;
-	color: white;
-	text-align: center;
-	padding: 15px;
-}
