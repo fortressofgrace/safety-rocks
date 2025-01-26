@@ -5,24 +5,48 @@ body{
 h1{
 	color: #9BB9BF; /*light blue*/
 	font-family: "Segoe Script", cursive;
+	text-align: center;
 }
 
 h2{
 	color: darkslategrey;
 	font-family: "Segoe Script", cursive;
+	text-align: center;
 }
 
 h3{
 	color: darkslategrey;
 	font-family: "Segoe Script", cursive;
+	text-align: center;
 }
 
 h4{
 	color: darkslategrey;
 	font-family: "Segoe Script", cursive;
+	text-align: center;
 }
 
 p{
 	color: white;
 	font-family: "Georgia", serif;
+	text-align: center;
+}
+
+nav{
+	text-align: center;
+	flex-direction: column;
+	display: flex;
+}
+
+ul{
+	text-align: center;
+	flex-direction: column;
+	display: flex;
+	color: white;
+}
+
+li{
+	text-align: center;
+	flex-direction: column;
+	display: flex;
 }
