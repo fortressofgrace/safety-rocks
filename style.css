@@ -6,36 +6,42 @@ h1{
 	color: #9BB9BF; /*light blue*/
 	font-family: "Segoe Script", cursive;
 	text-align: center;
+	font-size: 75px;
 }
 
 h2{
 	color: darkslategrey;
 	font-family: "Segoe Script", cursive;
 	text-align: center;
+	font-size: 50px;
 }
 
 h3{
 	color: darkslategrey;
 	font-family: "Segoe Script", cursive;
 	text-align: center;
+	font-size: 50px;
 }
 
 h4{
 	color: darkslategrey;
 	font-family: "Segoe Script", cursive;
 	text-align: center;
+	font-size: 50px;
 }
 
 p{
 	color: white;
 	font-family: "Georgia", serif;
 	text-align: center;
+	font-size: 25px;
 }
 
 nav{
 	text-align: center;
 	flex-direction: column;
 	display: flex;
+	font-size: 25px;
 }
 
 ul{
@@ -43,10 +49,20 @@ ul{
 	flex-direction: column;
 	display: flex;
 	color: white;
+	font-size: 25px;
 }
 
 li{
 	text-align: center;
 	flex-direction: column;
 	display: flex;
+	font-size: 25px;
+}
+
+a{
+	font-size: 25px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: #14555A;
 }
