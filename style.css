@@ -4,30 +4,34 @@ body{
 
 h1{
 	color: #9BB9BF; /*light blue*/
-	font-family: "Segoe Script", cursive;
+	font-family: "Lucida Calligraphy", sans-serif;
 	text-align: center;
-	font-size: 75px;
+	font-size: 150px;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 h2{
 	color: darkslategrey;
-	font-family: "Segoe Script", cursive;
+	font-family: "Book Antiqua", sans-serif;
 	text-align: center;
 	font-size: 50px;
+	margin-bottom: 0;
 }
 
 h3{
 	color: darkslategrey;
-	font-family: "Segoe Script", cursive;
+	font-family: "Book Antiqua", sans-serif;
 	text-align: center;
 	font-size: 50px;
+	margin-bottom: 0;
 }
 
 h4{
 	color: darkslategrey;
-	font-family: "Segoe Script", cursive;
+	font-family: "Book Antiqua", sans-serif;
 	text-align: center;
 	font-size: 50px;
+	margin-bottom: 0;
 }
 
 p{
@@ -35,6 +39,7 @@ p{
 	font-family: "Georgia", serif;
 	text-align: center;
 	font-size: 25px;
+	margin-top: 0;
 }
 
 nav{
@@ -50,6 +55,7 @@ ul{
 	display: flex;
 	color: white;
 	font-size: 25px;
+	margin-top: 0;
 }
 
 li{
@@ -57,6 +63,8 @@ li{
 	flex-direction: column;
 	display: flex;
 	font-size: 25px;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 a{
@@ -65,11 +73,75 @@ a{
 	display: flex;
 	flex-direction: column;
 	color: #14555A;
+	margin-top: 25px;
+	margin-bottom: 10px;
 }
 
 .banner {
-	width: 100%;
+	width: 75%;
+	max-width: 100%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
+}
+
+.centered-text{
+	width: 60%;
+	max-width: 800px;
+	margin: auto;
+	padding: 40px;
+	text-align: center;
+}
+
+.bio-image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 600px;
+	border-radius: 50%;
+	border-style: solid;
+	border-block-color: black;
+	border-width: 10px;
+}
+
+.image-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	justify-items: center;
+	align-items: center;
+}
+
+.reading-list{
+	display: grid;
+	width: 400px;
+	height: 1000px;
+	border-style: solid;
+	border-color: blanchedalmond;
+	border-width: 10px;
+	object-fit: cover;
+	flex-wrap: nowrap;
+}
+
+.statistics{
+	display: grid;
+	width: 400px;
+	height: 1000px;
+	border-style: solid;
+	border-color: blanchedalmond;
+	border-width: 10px;
+	object-fit: cover;
+	flex-wrap: nowrap;
+}
+
+.resources{
+	display: grid;
+	width: 400px;
+	height: 1000px;
+	border-style: solid;
+	border-color: blanchedalmond;
+	border-width: 10px;
+	object-fit: cover;
+	flex-wrap: nowrap;
 }
