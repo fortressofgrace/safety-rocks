@@ -5,10 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Fortress of Grace</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+	<script src="safetybutton.js"></script>
 </head>
 <body>
 	<h1 style="font-size: 75px" class="centered-text">Contact Fortress of Grace</h1>
-	<p class="centered-text">This page is currently under construction. Stay tuned to see how you can reach Fortress of Grace to book your class!</p>
+	<p class="centered-text">This page is currently under construction. Stay tuned to see how you can reach Fortress of Grace for more information!</p>
 	<a href="index.html">Back to Home</a>
+	<form id="contactForm">
+		<label for="email">Your Email:</label>
+		<input type="email" id="email" required>
+
+		<label for="message">Your Message:</label>
+		<textarea id="message" required></textarea>
+
+		<button type="submit" id="send">Send</button>
+		<p id="responseMessage" style="display: none;"></p>
+	</form>
 </body>
 </html>
