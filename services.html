@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Our Services</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="services.js"></script>
+	<button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+	<script src="safetybutton.js"></script>
 </head>
 <body>
-	<h1 style="font-size: 45px;" class="centered-text">Fortress of Grace offers a variety of tailored services to meet individual and group safety needs:</h1>
-	<h2>Personal Coaching</h2>
-	<p class="centered-text">Fortress of grace provides personalized one-on-one safety coaching for women, focusing on practical strategies, self-defense guidance, and confidence-building to enhance everyday security and inner resilience.</p>
+	<h1 style="font-size: 75px;" class="centered-text">Services
+		<p>Fortress of Grace offers a variety of tailored services to meet individual and group safety needs:</p>
+	</h1>
 
-	<h3>Group Classes</h3>
-	<p class="centered-text">In-person training for diverse-groups - serving everyone from college students to healthcare professionals and more.</p>
 
-	<h4>Public Speaking</h4>
-	<p class="centered-text">Engaging, impactful presentations on personal safety and empowerment for events and organizations.</p>
+	<div class="service">
+		<button class="service-btn" onclick="toggleDescription('coaching')">Personal Coaching</button>
+		<div id="coaching" class="service-description">
+			<p class="centered-text">Fortress of grace provides personalized one-on-one safety coaching for women, focusing on practical strategies, self-defense guidance, and confidence-building to enhance everyday security and inner resilience.</p>
+		</div>
+	</div>
+
+	<div class="service">
+		<button class="service-btn" onclick="toggleDescription('group')">Group Classes</button>
+		<div id="group" class="service-description">
+			<p class="centered-text">In-person training for diverse-groups - serving everyone from college students to healthcare professionals and more.</p>
+		</div>
+	</div>
+
+	<div class="service">
+		<button class="service-btn" onclick="toggleDescription('speaking')">Public Speaking</button>
+		<div id="speaking" class="service-description">
+			<p class="centered-text">Engaging, impactful presentations on personal safety and empowerment for events and organizations.</p>
+		</div>
+	</div>
+
+	<h2></h2>
+	<p><i>Each service is rooted in empowering women with the skills and knowledge needed to navigate life confidently and securely.</i></p>
+
+	<p><u>Serving all of Northwest Arkansas</u></p>
 
 	<a href="index.html">Back to Home</a>
 
