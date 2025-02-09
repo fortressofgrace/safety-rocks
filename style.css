@@ -1,5 +1,12 @@
 body{
 	background-color: #B8907B; /*sandy pink*/
+	font-size: 25px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: #14555A;
+	margin-top: 25px;
+	margin-bottom: 10px;
 }
 
 h1{
@@ -35,11 +42,12 @@ h4{
 }
 
 p{
-	color: white;
+	color: blanchedalmond;
 	font-family: "Georgia", serif;
 	text-align: center;
 	font-size: 25px;
 	margin-top: 0;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 nav{
@@ -83,6 +91,7 @@ a{
 	height: auto;
 	display: block;
 	margin: 0 auto;
+	opacity: 75%;
 }
 
 .centered-text{
@@ -103,6 +112,7 @@ a{
 	border-style: solid;
 	border-block-color: black;
 	border-width: 10px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 .image-grid{
@@ -144,4 +154,181 @@ a{
 	border-width: 10px;
 	object-fit: cover;
 	flex-wrap: nowrap;
+}
+
+button {
+	background-color: #B8907B; /*sandy pink*/
+	font-size: 25px;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: #14555A;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 150px;
+	border: none;
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+	background-color: darkslategrey;
+	cursor: pointer;
+}
+
+#safetyTips {
+    background-color: #9BB9BF; /* Light Blue */
+    border: 2px solid darkslategrey; 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin-top: 25px; 
+    margin: 20px auto;
+    width: fit-content; 
+    max-width: 400px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#safetyTips ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+#safetyTips ul li {
+    font-size: 18px; 
+    color: darkslategrey; 
+    padding: 5px 0; 
+    font-weight: bold; 
+    font-family: "Book Antiqua", sans-serif;
+}
+
+
+#showTipsBtn {
+    background-color: #9BB9BF; /*light blue*/; 
+    color: blanchedalmond;
+    border-style: solid;
+	border-color: blanchedalmond;
+	border-width: 10px;
+    padding: 10px 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 25px;
+    height: 150px;
+    width: 400px;
+}
+
+#showTipsBtn:hover {
+    background-color: darkslategrey;
+}
+
+button {
+    background-color: #B8907B; /* sandy pink */
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #14555A;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: darkslategrey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.service {
+    margin-top: 10px; 
+    margin: 20px auto;
+}
+
+.service-btn {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #9BB9BF; /* Light Blue */
+    color: blanchedalmond;
+    border: solid;
+    border-color: darkslategrey;
+    border-radius: 5px;
+    text-align: left;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+	flex-wrap: nowrap;
+	display: grid;
+}
+
+.service-description {
+    display: none; 
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.service-btn:hover {
+    background-color: darkslategrey; 
+}
+
+#send{
+	margin-top: 25px;
+	width: 125px;
+	height: 50px;
+	background-color: #9BB9BF; /* Light Blue */
+	text-shadow: none;
+}
+
+#emergencyButton{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 100px;
+	height: 100px;
+	background color: #9BB9BF; /* Light Blue */
+	color: blanchedalmond;
+	font-size: 18px;
+	border-radius: 50%;
+	border: solid;
+	border-color: blanchedalmond;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 1000;
+	opacity: 0.8;
+}
+
+#emergencyButton:hover{
+	background-color: darkslategrey;
+}
+
+#playButton{
+	background-color: #9BB9BF;
+	color: blanchedalmond;
+	width: 400px;
+	height: 150px;
+	border-radius: 50%;
+	border: solid;
+	border-color: blanchedalmond;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+}
+
+#playButton:hover{
+	background-color: darkslategrey;
 }
