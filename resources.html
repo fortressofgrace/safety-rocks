@@ -6,7 +6,7 @@
     <title>Information and Resources</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
-	<script src="safetybutton.js"></script>
+    <script src="safetybutton.js"></script>
 </head>
 <body>
     <h1 style="font-size: 75px" class="centered-text">Information and Resources</h1>
@@ -17,13 +17,113 @@
     </div>
 
     <button id="showTipsBtn">Show Safety Tips</button>
-    
     <div id="safetyTips" style="display: none;">
         <ul id="tipsList"></ul>
     </div>
 
-    <a href="index.html">Back to Home</a>
+    <!-- Safety Quiz -->
+    <h2>Interactive Safety Quiz</h2>
+    <form id="safetyQuizForm">
+        <label for="question1">1. Do you always let someone know where you're going? </label><br>
+        <input type="radio" id="q1Yes" name="question1" value="Yes">
+        <label for="q1Yes">Yes</label>
+        <input type="radio" id="q1No" name="question1" value="No">
+        <label for="q1No">No</label><br><br>
+
+        <label for="question2">2. Do you carry a phone with you for emergencies? </label><br>
+        <input type="radio" id="q2Yes" name="question2" value="Yes">
+        <label for="q2Yes">Yes</label>
+        <input type="radio" id="q2No" name="question2" value="No">
+        <label for="q2No">No</label><br><br>
+
+        <label for="question3">3. Have you ever taken a self-defense class? </label><br>
+        <input type="radio" id="q3Yes" name="question3" value="Yes">
+        <label for="q3Yes">Yes</label>
+        <input type="radio" id="q3No" name="question3" value="No">
+        <label for="q3No">No</label><br><br>
+
+        <label for="question4">4. Do you take the same route to work/school every day? </label><br>
+        <input type="radio" id="q4Yes" name="question4" value="Yes">
+        <label for="q4Yes">Yes</label>
+        <input type="radio" id="q4No" name="question4" value="No">
+        <label for="q4No">No</label><br><br>
+
+        <label for="question5">5. Do you wear both headphones while going on walks/runs? </label><br>
+        <input type="radio" id="q5Yes" name="question5" value="Yes">
+        <label for="q5Yes">Yes</label>
+        <input type="radio" id="q5No" name="question5" value="No">
+        <label for="q5No">No</label><br><br>
+
+        <label for="question6">6. Do you avoid walking alone at night, especially in unfamiliar areas? </label><br>
+        <input type="radio" id="q6Yes" name="question6" value="Yes">
+        <label for="q6Yes">Yes</label>
+        <input type="radio" id="q6No" name="question6" value="No">
+        <label for="q6No">No</label><br><br>
+
+        <label for="question7">7. Do you know your neighbors or the people in your area? </label><br>
+        <input type="radio" id="q7Yes" name="question7" value="Yes">
+        <label for="q7Yes">Yes</label>
+        <input type="radio" id="q7No" name="question7" value="No">
+        <label for="q7No">No</label><br><br>
+
+        <label for="question8">8. Do you regularly check your surroundings when walking alone? </label><br>
+        <input type="radio" id="q8Yes" name="question8" value="Yes">
+        <label for="q8Yes">Yes</label>
+        <input type="radio" id="q8No" name="question8" value="No">
+        <label for="q8No">No</label><br><br>
+
+        <label for="question9">9. Do you keep a whistle, pepper spray, or other self-defense tool on you? </label><br>
+        <input type="radio" id="q9Yes" name="question9" value="Yes">
+        <label for="q9Yes">Yes</label>
+        <input type="radio" id="q9No" name="question9" value="No">
+        <label for="q9No">No</label><br><br>
+
+        <label for="question10">10. Do you ever leave your drink unattended when out with others? </label><br>
+        <input type="radio" id="q10Yes" name="question10" value="Yes">
+        <label for="q10Yes">Yes</label>
+        <input type="radio" id="q10No" name="question10" value="No">
+        <label for="q10No">No</label><br><br>
+
+        <button type="button" onclick="evaluateQuiz()">Submit Quiz</button>
+    </form>
+
+    <div id="quizResults" style="display: none;">
+        <h3>Your Safety Quiz Results</h3>
+        <p id="quizScore"></p>
+    </div>
+
+    <script>
+        function evaluateQuiz() {
+            let score = 0;
+            let totalQuestions = 10;
+            
+            if (document.getElementById('q1Yes').checked) score++;
+            if (document.getElementById('q2Yes').checked) score++;
+            if (document.getElementById('q3Yes').checked) score++;
+            if (document.getElementById('q4No').checked) score++;
+            if (document.getElementById('q5No').checked) score++;
+            if (document.getElementById('q6Yes').checked) score++;
+            if (document.getElementById('q7Yes').checked) score++;
+            if (document.getElementById('q8Yes').checked) score++;
+            if (document.getElementById('q9Yes').checked) score++;
+            if (document.getElementById('q10No').checked) score++;
+
+            let resultMessage = "You scored " + score + " out of " + totalQuestions + ".";
+            
+            if (score === totalQuestions) {
+                resultMessage += " Excellent! You're highly safety-conscious!";
+            } else if (score === 0) {
+                resultMessage += " Consider taking extra precautions to stay safe.";
+            } else {
+                resultMessage += " Keep working on improving your safety awareness!";
+            }
+
+            document.getElementById("quizScore").innerText = resultMessage;
+            document.getElementById("quizResults").style.display = "block";
+        }
+    </script>
 
     <script src="safetyTips.js?v=1"></script>
+    <a href="index.html">Back to Home</a>
 </body>
 </html>
