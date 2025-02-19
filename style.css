@@ -168,7 +168,7 @@ button {
 	align-items: center;
 	color: #14555A;
 	margin-top: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 20px; /* Adds more space between the button and text below */
 	width: 150px;
 	height: 100px;
 	border: none;
@@ -243,6 +243,7 @@ button {
     border-color: darkslategrey;
     border-radius: 10px;
     box-sizing: border-box;
+    margin-bottom: 40px; /* or increase to 50px */
 }
 
 button:hover {
