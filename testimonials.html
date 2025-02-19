@@ -1,19 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testimonials</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
-	<script src="safetybutton.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonials</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="safetybutton.js"></script>
+    <style>
+        header {
+            width: 100%;
+            height: 300px; 
+            background: url('banner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 20px; 
+        }
+
+        .content-box {
+            background-color: #14555A;
+            color: white;
+            padding: 30px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #B8907B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #A5725F;
+        }
+    </style>
 </head>
 <body>
-	<h1 style="font-size: 75px" class="centered-text">Testimonials</h1>
-	<ul>
-		<li class="centered-text">"I have attended two weeklong courses and both times the course was excellent. The instructor was well-organized, and I was given information that I had not found elsewhere. I am a survivor of domestic violence, and the class gave me the confidence and the courage to finally advocate for myself. The class has in-depth instruction covering a broad range of topics and practical advice on the ways to stay safe in your own home, in your car, walking down the street, and in public places. Highly Recommended!"</li> 
-		<li class="centered-text">-Elaine</li>
-	</ul>
-	<a href="index.html">Back to Home</a>
+
+    <header></header>
+
+    <div class="content-box">
+        <h1 style="font-size: 75px">Testimonials</h1>
+
+        <ul style="list-style-type: none; padding: 0;">
+            <li>"I have attended two weeklong courses and both times the course was excellent. The instructor was well-organized, and I was given information that I had not found elsewhere. I am a survivor of domestic violence, and the class gave me the confidence and the courage to finally advocate for myself. The class has in-depth instruction covering a broad range of topics and practical advice on the ways to stay safe in your own home, in your car, walking down the street, and in public places. Highly Recommended!"</li> 
+            <li>- Elaine</li>
+        </ul>
+
+        <a href="index.html" style="color: white; text-decoration: underline;">Back to Home</a>
+        <br><br>
+        <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToSafety() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+
 </body>
 </html>
