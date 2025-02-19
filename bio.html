@@ -1,20 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Meet Your Safety Coach</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
-	<script src="safetybutton.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet Your Safety Coach</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="safetybutton.js"></script>
+    <style>
+        header {
+            width: 100%;
+            height: 300px; 
+            background: url('images/banner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 20px; 
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #B8907B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A5725F;
+        }
+
+        .bio-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-	<h1 style="font-size: 75px" class="centered-text">Meet Your Safety Coach</h1>
-	<img src="portrait.jpg" alt="Stormy Smyth" class="bio-image">
-	<p class="centered-text">Stormy Smyth is a dedicated professional with seven years of law enforcement experience, serving as a dispatcher, evidence and crime scene technician, and sex offender registrant. She has taught women’s self-defense classes at the Bentonville Police Department, Bentonville High School, Bentonville West High School, and various local small groups. Additionally, Stormy served as a substitute instructor for the self-defense class at Northwest Arkansas Community College (NWACC) and presented safety training for Tyson Foods.</p>
-	<p class="centered-text">With a minor in forensic science and extensive training in cybersecurity, Stormy possesses strong expertise in crime scene management, evidence collection, and safety protocols. Her diverse background informs her work at Fortress of Grace, a private, faith-based business dedicated to empowering women through educational self-defense programs. The mission of Fortress of Grace is to equip women with the knowledge and confidence to protect themselves, grounded in biblical principles of strength, grace, and wisdom. Through comprehensive education focused on personal safety, awareness, and spiritual resilience, Stormy creates a supportive and faith-driven environment for women seeking empowerment.</p>
-	<p class="centered-text">As a survivor of both childhood and adult trauma, she is deeply committed to fostering healing and growth in others. Stormy's passion for women's safety drives her mission to inspire confidence and resilience, ensuring that every woman feels equipped to navigate the challenges they may face.</p>
 
-	<a href="index.html">Back to Home</a>
+    <header>
+    </header>
+
+    <h1 class="centered-text">Meet Your Safety Coach</h1>
+    <img src="images/portrait.jpg" alt="Stormy Smyth" class="bio-image">
+    
+    <div class="centered-text">
+        <p>Stormy Smyth is a dedicated professional with seven years of law enforcement experience, serving as a dispatcher, evidence and crime scene technician, and sex offender registrant. She has taught women’s self-defense classes at the Bentonville Police Department, Bentonville High School, Bentonville West High School, and various local small groups. Additionally, Stormy served as a substitute instructor for the self-defense class at Northwest Arkansas Community College (NWACC) and presented safety training for Tyson Foods.</p>
+        <p>With a minor in forensic science and extensive training in cybersecurity, Stormy possesses strong expertise in crime scene management, evidence collection, and safety protocols. Her diverse background informs her work at Fortress of Grace, a private, faith-based business dedicated to empowering women through educational self-defense programs. The mission of Fortress of Grace is to equip women with the knowledge and confidence to protect themselves, grounded in biblical principles of strength, grace, and wisdom. Through comprehensive education focused on personal safety, awareness, and spiritual resilience, Stormy creates a supportive and faith-driven environment for women seeking empowerment.</p>
+        <p>As a survivor of both childhood and adult trauma, she is deeply committed to fostering healing and growth in others. Stormy's passion for women's safety drives her mission to inspire confidence and resilience, ensuring that every woman feels equipped to navigate the challenges they may face.</p>
+
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToSafety() {
+            window.location.href = "https://www.google.com"; 
+        }
+    </script>
 </body>
 </html>
