@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Free Presentation Library - Fortress of Grace</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: "Book Antiqua", sans-serif;
+            background-color: #B8907B;
+            color: blanchedalmond;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .presentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .presentation {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .presentation h2 {
+            font-size: 28px;
+            color: #2C3E50;
+        }
+        .presentation p {
+            font-size: 16px;
+            color: #555;
+        }
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+        }
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Free Presentation Library</h1>
+        <p>Empowering women with knowledge and faith-based self-defense resources.</p>
+        <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+    </header>
+
+    <section>
+        <div class="presentation-container">
+            <div class="presentation">
+                <h2>Personal Safety in Nursing</h2>
+                <p>This presentation covers essential safety strategies and tips for nurses, empowering them to stay aware and prepared.</p>
+                <div class="embed-container">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRTN_pdXbqAOU6mfWYGiNXMzDbvpDc3UN35mgHdEwE64U-uc5XFiIQdnuNDLc0Po9LafJv_75UcUs8w/embed?start=true&loop=false&delayms=60000" 
+                            frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToSafety() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</body>
+</html>
