@@ -1,36 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Welcome to Fortress of Grace</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<img src="banner.png" alt="Website Banner" class="banner">
-	<script src="safetybutton.js"></script>
-	<script src="audio.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Fortress of Grace</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="safetybutton.js"></script>
+    <script src="audio.js"></script>
+    <style>
+        
+        header {
+            width: 100%;
+            height: 300px; 
+            background: url('images/banner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+       
+        h1 {
+            font-size: 50px;
+            margin-top: 20px; 
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #B8907B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A5725F;
+        }
+    </style>
 </head>
 <body>
-	<h1 style="font-size: 50px" class="centered-text">Strength Through Grace, Safety Through Knowledge</h1>
 
-	<button onclick="toggleAudio()" id="playButton">Play Anchored in Grace</button>
+    <!-- Header with Banner Image -->
+    <header>
+        <!-- The banner itself -->
+    </header>
 
-	<audio id="AnchoredInGrace">
-		<source src="Anchored in Grace.mp3" type="audio/mp3">
-	</audio>
+    <!-- The text below the banner -->
+    <h1 class="centered-text">Strength Through Grace, Safety Through Knowledge</h1>
 
-	<p class="centered-text">Fortress of Grace is a private, faith-based business that is dedicated to empowering women through educational self-defense programs. Our mission is to equip women with the knowledge and confidence to protect themselves, grounded in biblical principles of strength, grace, and wisdom. We offer comprehensive education focused on personal safety, awareness, and spiritual resilience, all within a supportive and faith-driven environment.</p>
-	<p style="font-size: 20px;" class="centered-text"><i>These classes are strictly educational, focusing solely on mental and spiritual preparedness. While many physical self-defense classes are available for those interested, we believe that understanding the mental aspects of self-defense is crucial—90% of effective self-defense is mental, and only 10% is physical. By focusing on awareness, confidence, and mental readiness, we empower participants to avoid or de-escalate threats before any physical response is needed. This approach keeps our sessions informative, safe, and accessible to everyone, without any physical or hands-on training.</i></p>
+    <!-- Main Content -->
+    <div class="centered-text">
+        <button onclick="toggleAudio()" id="playButton">Play Anchored in Grace</button>
 
-	<nav>
-		<a href="services.html">Our Services</a>
-		<a href="bio.html">Meet Your Instructor</a>
-		<a href="resources.html">Information and Resources</a>
-		<a href="testimonials.html">Testimonials</a>
-		<a href="contact.html">Contact Fortress of Grace</a>
-	</nav>
+        <audio id="AnchoredInGrace">
+            <source src="audio/Anchored in Grace.mp3" type="audio/mp3">
+        </audio>
 
-	<!-- Emergency button -->
-	<button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+        <p>Fortress of Grace is a private, faith-based business that is dedicated to empowering women through educational self-defense programs. Our mission is to equip women with the knowledge and confidence to protect themselves, grounded in biblical principles of strength, grace, and wisdom. We offer comprehensive education focused on personal safety, awareness, and spiritual resilience, all within a supportive and faith-driven environment.</p>
 
+        <p><i>These classes are strictly educational, focusing solely on mental and spiritual preparedness. While many physical self-defense classes are available for those interested, we believe that understanding the mental aspects of self-defense is crucial—90% of effective self-defense is mental, and only 10% is physical. By focusing on awareness, confidence, and mental readiness, we empower participants to avoid or de-escalate threats before any physical response is needed. This approach keeps our sessions informative, safe, and accessible to everyone, without any physical or hands-on training.</i></p>
+
+        
+        <nav>
+            <a href="services.html">Our Services</a>
+            <a href="bio.html">Meet Your Instructor</a>
+            <a href="courses.html">Free Presentation Library</a>
+            <a href="resources.html">Information and Resources</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact Fortress of Grace</a>
+        </nav>
+
+        <!-- Emergency button -->
+        <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToSafety() {
+            window.location.href = "https://www.google.com"; // Redirect to the desired URL
+        }
+    </script>
 </body>
 </html>
