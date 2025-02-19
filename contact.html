@@ -9,7 +9,145 @@
     <script src="safetybutton.js"></script>
 </head>
 <body>
-    <h1 style="font-size: 75px" class="centered-text">Contact Fortress of Grace</h1>
+    <h1 style="font-size: 75px" class="centered-text">Contact Fortress of Grace</h1><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Fortress of Grace</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="safetybutton.js"></script>
+    <style>
+        header {
+            width: 100%;
+            height: 300px; 
+            background: url('banner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 20px; 
+        }
+
+        .content-box {
+            background-color: #14555A;
+            color: white;
+            padding: 30px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #B8907B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A5725F;
+        }
+
+        #responseMessage {
+            display: none;
+            color: blanchedalmond;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <div class="content-box">
+        <h1 style="font-size: 75px">Contact Fortress of Grace</h1>
+        <p>Do you have questions or do you want to learn more about our programs? Whether you are looking for classroom safety information, faith-based empowerment, or just need support on your safety journey, we are here to help!</p>
+
+        <a href="index.html" style="color: white; text-decoration: underline;">Back to Home</a>
+        <br><br>
+
+        <form id="contactForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" id="send">Send</button>
+        </form>
+
+        <p id="responseMessage">Thank you! Your message has been received.</p>
+
+        <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToSafety() {
+            window.location.href = "https://www.google.com";
+        }
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            let responseMessage = document.getElementById("responseMessage");
+            responseMessage.style.display = "block";
+            responseMessage.style.animation = "fadeIn 0.5s ease-in-out";
+
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        });
+    </script>
+
+</body>
+</html>
     <p class="centered-text">Do you have questions or do you want to learn more about our programs? Whether you are looking for classroom safety information, faith-based empowerment, or just need support on your safety journey, we are here to help!</p>
     <a href="index.html">Back to Home</a>
 
