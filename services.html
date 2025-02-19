@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Our Services</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="services.js"></script>
-	<button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
-	<script src="safetybutton.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Services</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="services.js"></script>
+    <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
+    <script src="safetybutton.js"></script>
+    <style>
+        
+        header {
+            width: 100%;
+            height: 300px; 
+            background: url('images/banner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 20px; 
+        }
+
+       
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #B8907B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A5725F;
+        }
+    </style>
 </head>
 <body>
-	<h1 style="font-size: 75px;" class="centered-text">Services
-		<p>Fortress of Grace offers a variety of tailored services to meet individual and group safety needs:</p>
-	</h1>
 
 
-	<div class="service">
-		<button class="service-btn" onclick="toggleDescription('coaching')">Personal Coaching</button>
-		<div id="coaching" class="service-description">
-			<p class="centered-text">Fortress of grace provides personalized one-on-one safety coaching for women, focusing on practical strategies, self-defense guidance, and confidence-building to enhance everyday security and inner resilience.</p>
-		</div>
-	</div>
+    <header>
+ 
+    </header>
 
-	<div class="service">
-		<button class="service-btn" onclick="toggleDescription('group')">Group Classes</button>
-		<div id="group" class="service-description">
-			<p class="centered-text">In-person training for diverse-groups - serving everyone from college students to healthcare professionals and more.</p>
-		</div>
-	</div>
+    <!-- The text below the banner -->
+    <h1 class="centered-text">Our Services</h1>
+    <p class="centered-text">Fortress of Grace offers a variety of tailored services to meet individual and group safety needs:</p>
 
-	<div class="service">
-		<button class="service-btn" onclick="toggleDescription('speaking')">Public Speaking</button>
-		<div id="speaking" class="service-description">
-			<p class="centered-text">Engaging, impactful presentations on personal safety and empowerment for events and organizations.</p>
-		</div>
-	</div>
+    <!-- Main Content -->
+    <div class="centered-text">
+        <div class="service">
+            <button class="service-btn" onclick="toggleDescription('coaching')">Personal Coaching</button>
+            <div id="coaching" class="service-description">
+                <p>Fortress of Grace provides personalized one-on-one safety coaching for women, focusing on practical strategies, self-defense guidance, and confidence-building to enhance everyday security and inner resilience.</p>
+            </div>
+        </div>
 
-	<h2></h2>
-	<p><i>Each service is rooted in empowering women with the skills and knowledge needed to navigate life confidently and securely.</i></p>
+        <div class="service">
+            <button class="service-btn" onclick="toggleDescription('group')">Group Classes</button>
+            <div id="group" class="service-description">
+                <p>In-person training for diverse groups - serving everyone from college students to healthcare professionals and more.</p>
+            </div>
+        </div>
 
-	<p><u>Serving all of Northwest Arkansas</u></p>
+        <div class="service">
+            <button class="service-btn" onclick="toggleDescription('speaking')">Public Speaking</button>
+            <div id="speaking" class="service-description">
+                <p>Engaging, impactful presentations on personal safety and empowerment for events and organizations.</p>
+            </div>
+        </div>
 
-	<a href="index.html">Back to Home</a>
+        <h2></h2>
+        <p><i>Each service is rooted in empowering women with the skills and knowledge needed to navigate life confidently and securely.</i></p>
 
+        <p><u>Serving all of Northwest Arkansas</u></p>
+
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToSafety() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
 </body>
 </html>
