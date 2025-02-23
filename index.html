@@ -8,11 +8,10 @@
     <script src="safetybutton.js"></script>
     <script src="audio.js"></script>
     <style>
-        
         header {
             width: 100%;
             height: 300px; 
-            background: url('banner.png') no-repeat center center;
+            background: url('images/banner.png') no-repeat center center;
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -21,7 +20,6 @@
             text-align: center;
         }
 
-       
         h1 {
             font-size: 50px;
             margin-top: 20px; 
@@ -55,31 +53,55 @@
         button:hover {
             background-color: #A5725F;
         }
+
+        /* Style for the video background box */
+        .video-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+        .video-container h2 {
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header with Banner Image -->
     <header>
-        <!-- The banner itself -->
     </header>
 
-    <!-- The text below the banner -->
     <h1 class="centered-text">Strength Through Grace, Safety Through Knowledge</h1>
 
-    <!-- Main Content -->
     <div class="centered-text">
         <button onclick="toggleAudio()" id="playButton">Play Anchored in Grace</button>
 
         <audio id="AnchoredInGrace">
-            <source src="Anchored in Grace.mp3" type="audio/mp3">
+            <source src="audio/Anchored in Grace.mp3" type="audio/mp3">
         </audio>
 
         <p>Fortress of Grace is a private, faith-based business that is dedicated to empowering women through educational self-defense programs. Our mission is to equip women with the knowledge and confidence to protect themselves, grounded in biblical principles of strength, grace, and wisdom. We offer comprehensive education focused on personal safety, awareness, and spiritual resilience, all within a supportive and faith-driven environment.</p>
 
         <p><i>These classes are strictly educational, focusing solely on mental and spiritual preparedness. While many physical self-defense classes are available for those interested, we believe that understanding the mental aspects of self-defense is crucial—90% of effective self-defense is mental, and only 10% is physical. By focusing on awareness, confidence, and mental readiness, we empower participants to avoid or de-escalate threats before any physical response is needed. This approach keeps our sessions informative, safe, and accessible to everyone, without any physical or hands-on training.</i></p>
 
-        
+        <div class="video-container">
+            <h2>Website Demo</h2>
+            <p>Explore how to navigate and use our website effectively.</p>
+            <iframe src="https://www.loom.com/embed/f6962ae5c0554461982b08f1cebd9167?sid=fcc0115d-35c6-4717-a1ff-4e3bf63dc292" 
+                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+            </iframe>
+        </div>
+
         <nav>
             <a href="services.html">Our Services</a>
             <a href="bio.html">Meet Your Instructor</a>
@@ -93,14 +115,13 @@
         <button id="emergencyButton" onclick="redirectToSafety()">Emergency Redirect</button>
     </div>
 
-    
     <footer>
         <p>&copy; 2025 Fortress of Grace | All Rights Reserved</p>
     </footer>
 
     <script>
         function redirectToSafety() {
-            window.location.href = "https://www.google.com"; // Redirect to the desired URL
+            window.location.href = "https://www.google.com"; 
         }
     </script>
 </body>
